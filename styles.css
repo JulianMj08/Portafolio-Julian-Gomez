@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fraunces', serif;
+}
+
+:root {
+    --dark-color: #011515;
+    --dark-secondary: #022b2a;
+    --dark-tertiary: #066c6b;
+    --soft-color: #09acab;
+    --very-soft: #0cd8d6;
+    --font-white: #F5F5F5;
+}
+
+/* header */
+.nav__navbar-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    height: 50px;
+    width: 100vw;
+    background-color: var(--dark-tertiary);
+}
+
+.nav__navbar-container ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav__navbar-container ul li {
+    margin: auto 15px;   
+}
+
+.nav__navbar-container ul li a {
+    text-decoration: none;
+    color: var(--font-white);
+}
+
+/* foto,nombre y profesion */
+
+.img-fondo {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    background-image: url(./assets/img/pexels-picjumbocom-196659-large.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.presentation-container {
+    display: flex;
+    position: absolute;
+    top: 150px;
+    width: auto;
+    
+
+}
+
+.presentation-container .photo {
+    background-image: url('./assets/img/foto\ J.jpg');
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+
+}
+
+.name-profession {
+    align-self: end;
+    margin: 20px;
+    color: var(--soft-color);
+    font-size: 1.3rem;
+    line-height: 30px;
+    max-width: 280px;
+    
+    
+}
+
+
+
+
