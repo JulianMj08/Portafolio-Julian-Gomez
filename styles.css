@@ -25,8 +25,8 @@ html {
     justify-content: space-between;
     font-size: 1.8rem;
     height: 50px;
-    width: 100vw;
-    background-color: var(--dark-tertiary);
+    width: 100%;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #09acab 100%);
 }
 
 .nav__navbar-container ul {
@@ -48,7 +48,7 @@ html {
 .img-fondo {
     display: flex;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 400px;
     background-image: url(./assets/img/pexels-picjumbocom-196659-large.jpg);
     background-position: center;
@@ -73,6 +73,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 100%;
+    border: 2px solid var(--font-white);
 
 }
 
@@ -82,8 +83,72 @@ html {
     color: var(--soft-color);
     font-size: 1.3rem;
     line-height: 30px;
-    max-width: 280px;
     
+    
+    
+}
+/* seccion de habilidades */
+
+.section__skills-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--font-white);
+    
+}
+
+.section__skills-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 30px;
+    color: var(--dark-secondary);
+
+    
+}
+
+.skills__icons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #09acab 100%);
+    
+
+}
+.skills__icons-container .item {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    border: 1px solid var(--font-white);
+    border-radius: 10%;
+    transition: all 300ms;
+    
+
+}
+.skills__icons-container .item:hover {
+    transform: scale(1.15);
+}
+
+
+
+ .html-icon {
+   padding: 10px 0 10px 0;
+
+
+}
+
+.css-icon {
+    padding: 10px 0 10px 0;
+}
+
+.JS-icon {
+    
+}
+
+.wordPress {
+    padding: 10px 0 10px 0;
     
 }
 
