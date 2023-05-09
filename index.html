@@ -1,65 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Author" content="Julian Gómez Henao">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&family=Fraunces:opsz,wght@9..144,700&family=Fredoka+One&family=Inter:wght@300;500&family=Montserrat:wght@300;500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@300&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+   <link rel="icon" sizes="192x192" href="./favicon.ico" type="image/ico">
     <title>Portafolio Julian Gomez</title>
 </head>
 <body>
-    <header>
+
+    <!--BARRA DE NAVEGACION-->
         <nav class="nav__navbar-container">
-            <span class="nav__logo">Mi Portafolio</span>
+            <span class="nav__logo">
+                <img src="./assets/iconos/logo.JG.png" width="70" height="70" alt="logo">
+            </span>
+                <ul>
+                    <li>
+                        <a href="#habilidades">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="#proyectos">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#sobreMi">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="#contactame">Contáctame</a>
+                    </li>
+                </ul>
 
-            <ul>
-                <li>
-                    <a href="">Estudios</a>
-                </li>
-                <li>
-                    <a href="">Habilidades</a>
-                </li>
-                <li>
-                    <a href="">Proyectos</a>
-                </li>
-                <li>
-                    <a href="">Sobre mi</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                <!--MENU MOBILE-->
+                <div class="menu-mobile">
+                    <img class="menu inactive" src="./assets/iconos/menu.png" width="20" height="20" alt="menu">
+                </div> 
+            </nav>
 
-    <section>
-        <span class="img-fondo"></span>
-        <div class="presentation-container">
-            <span class="photo"></span>
-            <div class="name-profession">
-            <h1 class="name">Julian Gómez Henao</h1>
-            <h3 class="profession">| Desarrollador Web Front-End |</h3>
-            </div>
-        </div> 
-    </section>
-    
-    <main>
-        <section class="section__skills-container">
-            <h2> Mis Habilidades </h2>
-            <div class="skills__icons-container">
-                <img class="item html-icon" src="./assets/iconos/317755_badge_html_html5_achievement_award_icon.png" alt="HTML">
-                <img class="item css-icon" src="./assets/iconos/317756_badge_css_css3_achievement_award_icon.png" alt="CSS">
-                <img class="item" src="./assets/iconos/652581_code_command_develop_javascript_language_icon.png" alt="JavaScript">
-                <img class="item wordPress" src="./assets/iconos/2993753_social media_wordpress_icon.png" alt="WordPress">
-                <img class="item github" src="./assets/iconos/211904_social_github_icon.png" alt="github">
-                <img class="item wordPress" src="./assets/iconos/2993753_social media_wordpress_icon.png" alt="WordPress">
-                <img class="item wordPress" src="./assets/iconos/2993753_social media_wordpress_icon.png" alt="WordPress">
-                <img class="item wordPress" src="./assets/iconos/2993753_social media_wordpress_icon.png" alt="WordPress">
-
+            <!--MENU MOBILE DESPLEGABLE-->
+            <div class="menu-mobile-desplegable inactive">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#sobreMi">Sobre mi</a></li>
+                    <li><a href="#contactame">Contáctame</a></li>
+                </ul>
             </div>
             
-        </section>
-    </main>
+    <!--HEADER-->
+        <header>   <!--VAMOS A CAMBIAR ESTO-->
+            <span class="img-fondo"></span>
+            <div class="presentation-container">
+                <span class="photo"></span>
+                <div class="name-profession">
+                    <h1 class="name">Julian Gómez Henao</h1>
+                    <h3 class="profession">| Desarrollador Web Front-End |</h3>
+                </div>
+            </div> 
+        </header>
+        
+         <!--CONTENIDO-->
+            <section class="section__skills-container">
+                <h2 id="habilidades"> Mis Habilidades </h2>
+                <div class="skills__icons-container">
+                    <img class="item html-icon" src="./assets/iconos/317755_badge_html_html5_achievement_award_icon.png" alt="HTML">
+                    <img class="item css-icon" src="./assets/iconos/317756_badge_css_css3_achievement_award_icon.png" alt="CSS">
+                    <img class="item javaScript-icon" src="./assets/iconos/652581_code_command_develop_javascript_language_icon.png" alt="JavaScript">
+                    <img class="item react-icon" src="./assets/iconos/react_icon_130845.png" alt="React">
+                    <img class="item angular-icon" src="./assets/iconos/angular-icon.png" alt="angular">
+                    <img class="item bootstrap-icon" src="./assets/iconos/bootstrap_plain_logo_icon_146619.png" alt="bootstrap">
+                    <img class="item github-icon" src="./assets/iconos/211904_social_github_icon.png" alt="github">
+                    <img class="item wordPress-icon" src="./assets/iconos/2993753_social media_wordpress_icon.png" alt="WordPress">
+                </div>           
+            </section>
 
-</body>
-</html>
+            <!--SECCION DE PROYECTOS-->
+            
+            <section>
+                <h2 id="proyectos" class="titulo-proyectos">Algunos Proyectos</h2>
+                <div class="contenedor-proyectos">
+                    <a target="_blank" href="https://viveleyendo.netlify.app">
+                        <div class="proyectos-items">
+                            <img src="./assets/img/pantalla-vive.png" alt="imagen pagina web">
+                            <div class="capa">
+                                <h3>Vive Leyendo</h3>
+                                <p>Página web en con su respectivo trabajo Front-End, y en proceso para conectar bases de datos.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://torneosgaming.netlify.app">
+                        <div class="proyectos-items">
+                            <img src="./assets/img/pantalla-gaming.png" alt="imagen pagina web">
+                            <div class="capa">
+                                <h3>Torneos Gaming</h3>
+                                <p>Landing page solicitada por uno de mis clientes en donde invita al público a registrarse en el evento que tiene preparado.</p>
+                            </div>
+                        </div>
+                        <div>
+                    </a>
+                    <a target="_blank" href="https://clongooglej.netlify.app">
+                        <div class="proyectos-items">
+                            <img src="./assets/img/pantalla-google.png" alt="imagen pagina web">
+                            <div class="capa">
+                                <h3>Clon de Google</h3>
+                                <p>Un poco de práctica haciendo un clon de Google, tengo la capacidad y el conocimiento de hacer un clon de muchas Webs y Apps Web.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>    
+                </div>     
+            </section>
+
+            <!--SECCION SOBRE MI-->
+            <section class="contenedor-sobre-mi">
+                <h2 id="sobreMi" class="sobre-mi">Sobre Mi...</h2>
+                <p class="parrafo-sobre-mi">Soy Julian Gómez desarrollador Web Front-End con experiencia en proyectos personales y trabajos en plataformas freelance, tengo una buena comprensión de paginas web y aplicaciones web utilizando diferentes frameworks  para hacer un trabajo más ágil y desarrollar aplicaciones mas robustas y escalables. <br>
+                Actualmente soy estudiante Full Stack en la ciudad de Madrid, España. Obteniendo cada dia mas conocmientos en el area de desarrollo y programación. <br>
+                Soy una persona apasionada por aprender y mejorar cada dia mis habilidades en tecnologia. Soy muy organizado y detallista y me esfuerzo por entregar trabajos de alta calidad en el plazo acordado. Además, disfruto trabajar en equipo y soy un buen comunicador, lo que me permite colaborar efectivamente con otros.</p>
+            </section>
+
+            <!--SECCION DE CONTACTO-->
+            <section>
+                <div class="contenedor-contacto">
+                    <div class="informacion-personal">
+                        <h2 id="contactame">Julian Gómez Henao</h3>
+                        <p><img src="./assets/iconos/icono-ubicacion.png"width="20" height="20" alt=""> Madrid - España</p>
+                        <p><img src="./assets/iconos/email.png"width="20" height="20" alt=""> julianmjadi@gmail.com</p>
+                        <p><img src="./assets/iconos/phone-call.png" width="20" height="20"alt=""> +34 602 41 6030</p>
+                    </div>
+                    <div class="servicios">
+                        <h3>¿Algún proyecto?</h3>
+                        <p>Página Web</p>
+                        <p>Tienda online</p>
+                        <p>Sitio de contenido</p>
+                        <p>Pagina de aterrizaje</p>
+                        <p>Blog</p>
+                        <p>Nuevas secciones en tu página web</p>
+                    </div>
+                    <div class="formulario-de-contacto">
+                        <h3>Si deseas que te contacte <br>diligencia el formulario</h3>
+                        <form action="">
+                            <label for="name">Nombre:</label>
+                            <input type="name" id="name" placeholder=" Escriba su nombre" required>
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" placeholder=" Correo@gmail.com" required>
+                            <label for="phone">Telefono</label>
+                            <input type="text" id="phone"placeholder=" (Opcional)">
+                            <div class="enviar-borrar">
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Borrar formulario">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!--FOOTER-->
+            <footer class="contenedor-redes"r>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://github.com/JulianMj08"><img src="./assets/iconos/github.png" width="40" height="40" alt="icono github"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/julian-gomez-henao-1084a9233/"><img src="./assets/iconos/linkedin.png" width="40" height="40" alt="icon linkedin"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/juliian.gomez.39/"><img src="./assets/iconos/instagram.png"
+                        width="40" height="40" alt="icon instagram"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/juliian.gomez.39"><img src="./assets/iconos/facebook.png" width="40" height="40" alt="icon facebook"></a>
+                    </li>
+                </ul> 
+                <p class="lius">© 2023 Julian Gómez Henao</p>
+            </footer>
+            <script src="./javaScript.js"></script>
+    </body>
+    </html>
+    </main>
+    

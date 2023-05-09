@@ -6,8 +6,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
-    font-family: 'Fraunces', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -19,14 +18,18 @@ html {
     --font-white: #F5F5F5;
 }
 
-/* header */
+.inactive {
+    display: none;
+}
+
+/* BARRA DE NAVEGACION */
 .nav__navbar-container {
     display: flex;
-    justify-content: space-between;
-    font-size: 1.8rem;
-    height: 50px;
+    font-size: 1.6rem;
+    height: auto;
     width: 100%;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #09acab 100%);
+    border-bottom: 1px solid var(--font-white);
+    background: linear-gradient(207.8deg, #201E1C 12.69%, #09acab 100%);
 }
 
 .nav__navbar-container ul {
@@ -34,8 +37,13 @@ html {
     list-style: none;
 }
 
+.nav__logo img {
+    border-radius: 25px;
+    margin: 2px 10px;
+}
+
 .nav__navbar-container ul li {
-    margin: auto 15px;   
+    margin: auto 0 auto 30px;   
 }
 
 .nav__navbar-container ul li a {
@@ -43,57 +51,95 @@ html {
     color: var(--font-white);
 }
 
-/* foto,nombre y profesion */
+/*MOBILE-MENU*/
+
+.menu-mobile {
+    display: flex;
+    justify-content: end;
+}
+
+.menu {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.menu-mobile-desplegable {
+    background: linear-gradient(107.8deg, #201E1C 6.69%, #09acab 100%);
+    position: absolute;
+    left: 8px;
+    top: 78px;
+    padding: 24px;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 10px
+}
+
+.menu-mobile-desplegable ul {
+    list-style: none;
+}
+.menu-mobile-desplegable li {
+    display: block;
+    margin: 20px 8px;
+}
+.menu-mobile-desplegable a {
+    text-decoration: none;
+    color: var(--font-white);
+    font-weight: 400;
+}
+
+
+/* HEADER */
 
 .img-fondo {
     display: flex;
-    position: relative;
     width: 100%;
     height: 400px;
     background-image: url(./assets/img/pexels-picjumbocom-196659-large.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;  
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+     box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 .presentation-container {
     display: flex;
+    flex-direction: column;
     position: absolute;
     top: 150px;
     width: auto;
-    
-
 }
 
 .presentation-container .photo {
-    background-image: url('./assets/img/foto\ J.jpg');
-    width: 250px;
-    height: 250px;
+    background-image: url('./assets/img/foto-portafolio-editada.jpeg');
+    width: 25rem;
+    height: 25rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 100%;
     border: 2px solid var(--font-white);
-
+    margin-left: 4px;
 }
 
 .name-profession {
     align-self: end;
-    margin: 20px;
+    margin-top: 15px;
     color: var(--soft-color);
     font-size: 1.3rem;
     line-height: 30px;
-    
-    
-    
 }
-/* seccion de habilidades */
+
+/* SECCION DE HABILIDADES */
 
 .section__skills-container {
     display: flex;
     flex-direction: column;
     background-color: var(--font-white);
-    
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+     box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+
 }
 
 .section__skills-container h2 {
@@ -101,9 +147,7 @@ html {
     font-weight: bold;
     margin: 0 auto;
     padding: 30px;
-    color: var(--dark-secondary);
-
-    
+    color: var(--dark-secondary);  
 }
 
 .skills__icons-container {
@@ -113,10 +157,9 @@ html {
     gap: 10px;
     justify-items: center;
     align-items: center;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #09acab 100%);
-    
-
+    background: linear-gradient(207.8deg, #201E1C 12.69%, #09acab 100%);
 }
+
 .skills__icons-container .item {
     width: 75%;
     height: 75%;
@@ -124,34 +167,235 @@ html {
     border: 1px solid var(--font-white);
     border-radius: 10%;
     transition: all 300ms;
-    
-
 }
+
 .skills__icons-container .item:hover {
     transform: scale(1.15);
 }
 
-
-
- .html-icon {
+.html-icon {
    padding: 10px 0 10px 0;
-
-
 }
 
 .css-icon {
     padding: 10px 0 10px 0;
 }
 
-.JS-icon {
-    
+.wordPress-icon {
+    padding: 10px 0 10px 0; 
 }
 
-.wordPress {
+.react-icon {
     padding: 10px 0 10px 0;
+}
+.bootstrap-icon {
+    padding: 10px 0 10px 0;
+}
+
+/* PROYECTOS */
+
+
+.titulo-proyectos {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 30px;
+    color: var(--dark-secondary); 
+    text-align: center;
+}
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    padding: 40px 0;
+    background-color: var(--font-white);
+}
+
+.proyectos-items {
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
     
 }
 
+.proyectos-items img {
+   width: 100%;
+   border-radius: 8px;
+   border: 1px solid green;
+   transition: all 500ms ease-out;
+   -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+     box-shadow: 5px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.proyectos-items .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    background: rgba(172, 217, 178,0.4);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
 
+.proyectos-items:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
 
+.proyectos-items:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
 
+.proyectos-items .capa h3 {
+    color: var(--dark-color);
+    font-weight: 600;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.proyectos-items .capa p {
+    color: var(--dark-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.proyectos-items:hover > img {
+    transform: scale(1.1);
+}
+
+/*SECCION SOBRE MI*/
+.sobre-mi {
+    margin: 15px 0 0 15px;
+    font-size: 2.3rem;
+    padding-left: 10px;
+}
+.parrafo-sobre-mi {
+    letter-spacing: 0.00938em;
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    font-family: sans-serif;
+    padding: 0 40px 40px 40px;
+    margin-top: 15px;
+}
+
+/*SECCION DE CONTACTO*/
+.contenedor-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    background-color: var(--font-white);
+}
+
+.informacion-personal {
+    margin-top: 1rem;
+    line-height: 4rem;
+}
+.servicios h3 {
+    margin: 1rem 0;
+}
+
+.formulario-de-contacto h3 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 300px;
+    font-size: 1.4rem;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-color);
+    background: linear-gradient(277.8deg, #201E1C 0.6%, #09acab 100%);
+    
+}
+form label {
+    display: block;
+    margin-left: 14px;
+}
+
+form input {
+    width: 90%;
+    height: 30px;
+    margin-left: 14px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    border: 0.5px solid gray;
+}
+
+.enviar-borrar {
+    margin-top: 2.8rem;
+    width: 80%;
+    margin-left: 25px;
+}
+
+.enviar-borrar :nth-child(2) {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.enviar-borrar input {
+    cursor: pointer;
+    background: gray;
+    color: var(--font-white);
+    border: 1px solid var(--font-white);
+}
+/*PIE DE PAGINA*/
+
+.contenedor-redes {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(207.8deg, #201E1C 12.69%, #09acab 100%);
+}
+
+.contenedor-redes li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.lius {
+    margin-top: 16px;
+    font-size: 12px;
+    color: var(--font-white);
+}
+
+@media (max-width: 552px) {
+    .informacion-personal, .servicios {
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (max-width: 540px) {
+   .menu {
+    display: block;
+   }
+   .nav__navbar-container ul {
+    display: none;
+   }
+   .photo {
+    display: none;
+   }
+   .name-profession {
+    display: none;
+   }
+}
