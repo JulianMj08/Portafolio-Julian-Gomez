@@ -68,7 +68,7 @@ html {
     position: absolute;
     left: 8px;
     top: 78px;
-    padding: 24px;
+    padding: 6px 24px;
     border: 1px solid var(--very-light-pink);
     border-radius: 10px
 }
@@ -78,7 +78,7 @@ html {
 }
 .menu-mobile-desplegable li {
     display: block;
-    margin: 20px 8px;
+    margin: 10px 8px;
 }
 .menu-mobile-desplegable a {
     text-decoration: none;
@@ -173,23 +173,8 @@ html {
     transform: scale(1.15);
 }
 
-.html-icon {
+.html-icon, .css-icon, .typescript-icon, .jest-icon, .bootstrap-icon, .jasmine-icon, .tailwind-icon, .sass-icon, .mysql-icon {
    padding: 10px 0 10px 0;
-}
-
-.css-icon {
-    padding: 10px 0 10px 0;
-}
-
-.wordPress-icon {
-    padding: 10px 0 10px 0; 
-}
-
-.react-icon {
-    padding: 10px 0 10px 0;
-}
-.bootstrap-icon {
-    padding: 10px 0 10px 0;
 }
 
 /* PROYECTOS */
@@ -392,10 +377,16 @@ form input {
    .nav__navbar-container ul {
     display: none;
    }
-   .photo {
-    display: none;
-   }
-   .name-profession {
-    display: none;
-   }
+
+   .presentation-container .photo {
+    width: 200px;
+    height: 200px;
+}
+   .presentation-container {
+    top: 211px;
+    
+}
+    .name-profession {
+        font-size: 1.1rem;
+    }
 }
